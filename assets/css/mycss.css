@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* ============================== Mobile View ============================== */
+@media screen and (max-width: 768px) {
+    .box-front{
+        background-image: url('../images/me2.jpg');
+    }
+    .nav-bar{
+        text-align: center;
+    }
+    .nav-bar .nav-bar-link{
+        font-size: 12px;
+        padding: 8px 10px;
+    }
+    .text-container{
+        top:85%;
+        left:50%
+    }
+    .name-text{
+        font-size: 28px;
+    }
+    .role-text{
+        font-size: 18px;
+    }
+    .text-container .link{
+        color: white;
+        font-size: 20px;
+        background-color: rgba(22, 20, 34, 0.8);
+        padding: 8px 10px;
+        border-radius: 50%;
+    }
+}
+/* ============================== HiDPI View ============================== */
+@media screen and (min-width: 768px) {
+    .box-front{
+        background-image: url('../images/me.jpg');
+    }
+    .nav-bar .nav-bar-link{
+        font-size: 20px;
+        padding: 10px 30px;
+    }
+    .text-container{
+        top:75%;
+        left:50%
+    }
+    .name-text{
+        font-size: 45px;
+    }
+    .role-text{
+        font-size: 27px;
+    }
+    .text-container .link{
+        padding: 10px 13px;
+        border-radius: 50%;
+        background-color: rgba(22, 20, 34, 0.8);
+        font-size: 20px;
+    }
+    .text-container img{
+        margin-top: 100px;
+    }
+    .about-box{
+        padding-top: 25px;
+    }
+}
+/* ============================== Common for Both ============================== */
+.link{
+    text-decoration: none;
+    color:inherit;
+}
+.link:hover{
+    color: purple;
+}
+p{
+    font-size: 15px;
+    line-height: 25px;
+    padding: 15px;
+    text-align: justify;
+}
+
+.progress-bar{
+    height: 15px;
+    width: 100%;
+    background-color: gray;
+}
+.progress-bar > .progress{
+    height: 15px;
+    width: 100%;
+    background-color: purple;
+}
+.box{
+    min-height: 20vh;
+    width: 100%;
+}
+
+.box-front{
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.nav-bar{
+    padding-top: 30px;
+    padding-left: 2%;
+    width: 90%;
+}
+.nav-bar .nav-bar-link{
+    text-decoration: none;
+    color: black;
+    border-radius: 3px;
+    letter-spacing: 2px;
+    font-family: 'muli';
+    background-color: rgba(238, 238, 238, 0.6);
+}
+.nav-bar a.active{
+    color: green;
+}
+.nav-bar .nav-bar-link:hover{
+    color: green;
+    background-color: white;
+}
+
+.text-container{
+    position: absolute;
+    width: 100%;
+    color:white;
+    text-align: center;
+    transform:translate(-50%,-50%);
+}
+.name-text{
+    font-weight: bold;
+    color: white;
+    font-family: 'Quicksand';
+}
+.role-text{
+    font-family: 'Quicksand';
+    color: white;
+}
+.about-box{
+    display: grid;
+    grid-template-columns: 15vw auto 15vw;
+}
+.about-box > div, .det-box > div{
+    padding: 10px;
+    font-family: 'Muli';
+}
+.det-box, .contact-box{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.three-col{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.three-col > div{
+    text-align: center;
+    padding: 10px;
+    background-color: lightgray;
+}
+
+
+.footer{
+    min-height: 50px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 25px 0px;
+    text-align: center;
+    font-family: 'muli';
+}
+
+.contact-box label{
+    font-family: muli;
+    font-size: 12px;
+    line-height: 0px;
+    text-transform:uppercase;
+    font-weight: bold;
+}
+.txt-box{
+    width: 94%;
+    height: 20px;
+    font-family: muli;
+    font-size: 14px;
+    padding: 3px 2%;
+    margin-left: 2%;
+}
+.btn{
+    padding: 8px 10px;
+    font-family: muli;
+    float: right;
+    color: white;
+    background-color: green;
+    cursor:pointer;
+    border: none;
+}
