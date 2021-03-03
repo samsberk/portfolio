@@ -12,6 +12,7 @@ html{
     }
     .nav-bar{
         text-align: center;
+        height: 30px;
     }
     .nav-bar .nav-bar-link{
         font-size: 12px;
@@ -42,7 +43,7 @@ html{
     }
     .nav-bar .nav-bar-link{
         font-size: 20px;
-        padding: 10px 30px;
+        padding: 7px 15px;
     }
     .text-container{
         top:75%;
@@ -92,10 +93,6 @@ p{
     width: 100%;
     background-color: purple;
 }
-.box{
-    min-height: 20vh;
-    width: 100%;
-}
 
 .box-front{
     height: 100vh;
@@ -105,9 +102,12 @@ p{
     background-repeat: no-repeat;
 }
 .nav-bar{
-    padding-top: 30px;
-    padding-left: 2%;
-    width: 90%;
+    padding-top: 15px;
+    padding-left: 1%;
+    width: 98%;
+    background-color: white;
+    position: sticky;
+    top:0;
 }
 .nav-bar .nav-bar-link{
     text-decoration: none;
@@ -115,14 +115,11 @@ p{
     border-radius: 3px;
     letter-spacing: 2px;
     font-family: 'muli';
-    background-color: rgba(238, 238, 238, 0.6);
-}
-.nav-bar a.active{
-    color: green;
+    background-color: lightgray;
 }
 .nav-bar .nav-bar-link:hover{
-    color: green;
-    background-color: white;
+    color: white;
+    background-color: dimgray;
 }
 
 .text-container{
@@ -132,16 +129,12 @@ p{
     text-align: center;
     transform:translate(-50%,-50%);
 }
-.name-text{
+.name-text, .role-text{
     font-weight: bold;
     color: white;
     font-family: 'Quicksand';
 }
-.role-text{
-    font-family: 'Quicksand';
-    color: white;
-}
-.about-box{
+.about-box, .contact-box{
     display: grid;
     grid-template-columns: 15vw auto 15vw;
 }
@@ -149,7 +142,7 @@ p{
     padding: 10px;
     font-family: 'Muli';
 }
-.det-box, .contact-box{
+.det-box{
     display: grid;
     grid-template-columns: auto auto;
 }
@@ -176,7 +169,7 @@ p{
 
 .contact-box label{
     font-family: muli;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 0px;
     text-transform:uppercase;
     font-weight: bold;
@@ -188,6 +181,8 @@ p{
     font-size: 14px;
     padding: 3px 2%;
     margin-left: 2%;
+    border-radius: 0;
+    border: 1px solid gray;
 }
 .btn{
     padding: 8px 10px;
