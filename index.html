@@ -17,28 +17,26 @@
         </style>
     </head>
     <body>
-        <div class="box-front">
-
-            <!-- ***************************************** Nav Bar ******************************************* -->
-            <div class="nav-bar">
-                <a href="index.html" class="nav-bar-link active"><i class="fa fa-home"></i> HOME</a>
-                <a href="resume.html" class="nav-bar-link"><i class="fa fa-vcard"></i> RESUME</a>
-                <a href="contact.html" class="nav-bar-link"><i class="fa fa-phone"></i> CONTACT</a>
-            </div>
-
+        <div class="box-front" id="Home">
             <!-- ***************************************** Brand Text ******************************************* -->
             <div class="text-container">
                 <span class="name-text">Shivam Vishwakarma</span><br>
-                <span class="role-text">Software Engineer</span><br><br><br>
-                <a href="https://www.gitlab.com/samsberk" class="link"><i class="fa fa-gitlab"></i></a>&ensp;
-                <a href="https://www.github.com/samsberk" class="link"><i class="fa fa-github"></i></a>&ensp;
-                <a href="https://www.linkedin.com/in/samsberk" class="link"><i class="fa fa-linkedin"></i></a>&ensp;
-                <a href="https://www.twitter.com/samsberk" class="link"><i class="fa fa-twitter"></i></a>&ensp;
-                <a href="https://www.skype.com/samsberk" class="link"><i class="fa fa-skype"></i></a><br>
-                <a href="#About"><img src="assets/images/sdown.gif" height="80px" width="100px"></a>
+                <span class="role-text" style="font-weight: normal;">Software Engineer</span><br><br><br>
+                <a href="https://www.gitlab.com/samsberk" class="link" target="_blank"><i class="fa fa-gitlab"></i></a>&ensp;
+                <a href="https://www.github.com/samsberk" class="link" target="_blank"><i class="fa fa-github"></i></a>&ensp;
+                <a href="https://www.linkedin.com/in/samsberk" class="link" target="_blank"><i class="fa fa-linkedin"></i></a>&ensp;
+                <a href="https://www.twitter.com/samsberk" class="link" target="_blank"><i class="fa fa-twitter"></i></a>&ensp;
+                <a href="https://join.skype.com/invite/XsqxAZQ1L4kI" class="link" target="_blank"><i class="fa fa-skype"></i></a><br>
+                <a href="#Resume"><img src="assets/images/sdown.gif" height="80px" width="100px"></a>
             </div>
         </div>
-        <div class="about-box" id="About">
+        <!-- ***************************************** Nav Bar ******************************************* -->
+        <div class="nav-bar" id="Resume">
+            <a href="#Home" class="nav-bar-link"><i class="fa fa-home"></i> HOME</a>
+            <a href="#Resume" class="nav-bar-link"><i class="fa fa-vcard"></i> RESUME</a>
+            <a href="#Contact" class="nav-bar-link"><i class="fa fa-phone"></i> CONTACT</a>
+        </div>
+        <div class="about-box">
             <div class="item"></div>
             <div class="item">
 
@@ -79,22 +77,23 @@
                     <div class="progress-bar"><div class="progress" style="width: 55%;"></div></div>
                     <br><h3>C Language : 60%</h3>
                     <div class="progress-bar"><div class="progress" style="width: 60%;"></div></div>
-                </div><br>
+                </div><br id="Contact">
+                <hr><br>
 
                 <!-- ***************************************** contact ******************************************* -->
                 <h2>Contact -</h2><br>
                 <div class="contact-box">
+                    <div></div>
                     <div>
                         <label>Name -</label><br>
-                        <input type="text" class="txt-box"><br>
+                        <input type="text" class="txt-box" placeholder="Enter Your Name"><br>
                         <label>Email id -</label><br>
-                        <input type="text" class="txt-box">
-                    </div>
-                    <div>
+                        <input type="text" class="txt-box" placeholder="Enter Your Email ID">
                         <label>message -</label><br>
-                        <textarea rows="4" class="txt-box" style="height:75px;"></textarea>
+                        <textarea rows="4" class="txt-box" style="height:75px;" placeholder="Enter Your Message (Max. 100 words)"></textarea>
                         <button type="submit" class="btn">Submit</button>
                     </div>
+                    <div></div>
                 </div><br><br>
 
                 <!-- ***************************************** google map ******************************************* -->
